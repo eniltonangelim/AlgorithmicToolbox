@@ -49,4 +49,60 @@ class TestFibonacci {
         assertEquals(151, nth)
     }
 
+    @Test
+    @DisplayName("Ultimo digito da soma do número 3 (fibonacci)")
+    fun test6() {
+        val result = calcLastDigitOfTheSumFibonacci(3)
+        assertEquals(4, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do número 100 (fibonacci)")
+    fun test7() {
+        val result = calcLastDigitOfTheSumFibonacci(100)
+        assertEquals(5, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do número (3, 7) (fibonacci)")
+    fun test8() {
+        val result = calcLastDigitOfTheSumFibonacci(3, 7)
+        assertEquals(1, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do número (10, 10) (fibonacci)")
+    fun test9() {
+        val result = calcLastDigitOfTheSumFibonacci(10, 10)
+        assertEquals(5, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do número (10, 200) (fibonacci)")
+    fun test10() {
+        val result = calcLastDigitOfTheSumFibonacci(10, 200)
+        assertEquals(2, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do quadrado de (7) (fibonacci)")
+    fun test11() {
+        val result = calcLastDigitOfTheSumOfSquaresFibonacci(7)
+        assertEquals(3, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do quadrado de (73) (fibonacci)")
+    fun test12() {
+        val result = calcLastDigitOfTheSumOfSquaresFibonacci(73)
+        assertEquals(1, result)
+    }
+
+    @Test
+    @DisplayName("Ultimo digito da soma do quadrado de (1234567890) (fibonacci)")
+    fun test13() {
+        val result = calcLastDigitOfTheSumOfSquaresFibonacci(1234567890)
+        assertEquals(0, result)
+    }
+
 }
