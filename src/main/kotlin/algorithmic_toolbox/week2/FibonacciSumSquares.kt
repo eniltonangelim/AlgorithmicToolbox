@@ -5,10 +5,12 @@ import java.util.*
 fun findlastDigitOfNumber(n: Long): Long {
     var fibAList = LongArray((n+1).toInt())
 
+    if ( n < 2) return n
+
     fibAList[0] = 0
     fibAList[1] = 1
 
-    if ( n < 2) return n
+
 
     for (i in 2..n) {
         fibAList[i.toInt()] = (fibAList[(i-1).toInt()] + fibAList[(i-2).toInt()]) % 10

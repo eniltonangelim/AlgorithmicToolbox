@@ -18,7 +18,7 @@ fun lastDigitOfThePartialSumFibonacci(n: Long): Long {
 
 fun getFibonacciSum(n: Long): Long {
     val pisanoPeriodOf10 = 60
-    val lastDigit = lastDigitOfTheSumFibonacci((n + 2) % pisanoPeriodOf10)
+    val lastDigit = lastDigitOfThePartialSumFibonacci((n + 2) % pisanoPeriodOf10)
     if (lastDigit == 0L)
         return 9L
 
